@@ -1,0 +1,89 @@
+
+    /* DATA TOGGLE CSS  */
+    .toggler h2{
+    text-align: center;
+    color: red;
+    }
+                                                          
+    .toggle p{
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+    }
+                                                          
+    input{
+    display: none;
+    visibility: hidden;
+    }
+    
+    label{
+        display: block;
+        padding: 0.5;
+        text-align: left;
+        /* border-bottom: 5px dotted yellow; */
+        color: red;
+        transition: 0.2s;
+        background-color:blue;
+        font-size: larger;
+    }
+
+    label:hover{
+        color: black;
+    }
+
+    label:before{
+        font-weight: 800;
+        font-size: 20px;
+        content: "+";
+        vertical-align: text-top;
+        display: inline;
+        margin: -5 5px;
+        border-radius: 50%;
+       padding: 5px;
+    }
+
+    #expand{
+        height: 0;
+        overflow: hidden;
+        transition: height 0.5s;
+        /* background:url(img/we.png); */
+        background-size: 100%;
+        background-repeat: no-repeat;
+        color: #000;
+    }
+
+    section{
+        padding: 0 15px;
+    }
+
+    #toggle:checked ~ #expand{
+        height: 300px;
+    }
+
+    #toggle:checked ~label:before{
+        content: "-";
+    }
+    /* END OF DATA GOOGLE CSS */
+
+   
+
+                                             /* ACCORDION TOGGLER */
+    #accordion section p{
+        display: none;
+        text-align: center;
+    }
+
+    #accordion section a{
+        color: black;
+        text-align: center;
+        text-decoration: none;
+    }
+
+    #accordion section a:hover{
+        text-decoration: underline;
+    }
+
+    #accordion section:target p{
+        display: block;
+        
+    } 
